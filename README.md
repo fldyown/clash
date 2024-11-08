@@ -4,9 +4,9 @@
   用多少扣多少，可以先买1元试用，如果平时流量用的不多，你们试用流量都可以用接近一个月了；稳定性还不错
   ChatGPT、Gemini 等都可以正常登录使用
 
-### [优惠连接](https://mojie.best/#/register?code=Pvs1RARA)
+### [优惠连接](https://mojie.app/register?aff=Pvs1RARA)
 
-# [魔戒机场官网+持续更新](https://mojie.best/#/register?code=Pvs1RARA)
+# [魔戒机场官网+持续更新](https://mojie.app/register?aff=Pvs1RARA)
 
 
 魔戒机场，一家以按量付费套餐著称的VPN服务提供商，旨在为用户提供灵活、经济的上网体验。
@@ -20,7 +20,7 @@
 
 ## 魔戒机场优惠码
 
-目前暂无优惠码，建议关注 [魔戒机场官网](https://mojie.best/#/register?code=Pvs1RARA) 获取最新信息。
+目前暂无优惠码，建议关注 [魔戒机场官网](https://mojie.app/register?aff=Pvs1RARA) 获取最新信息。
 
 
 ## 魔戒机场价格
