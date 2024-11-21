@@ -1,8 +1,8 @@
 # 极致性价比科学上网推荐
 
 ## 按量计费
-  用多少扣多少，可以先买1元试用，如果平时流量用的不多，你们试用流量都可以用接近一个月了；稳定性还不错
-  ChatGPT、Gemini 等都可以正常登录使用
+  用多少扣多少，稳定性还不错。
+  ChatGPT、Gemini、Claude 等都可以正常登录使用
 
 ### [优惠连接](https://mojie.app/register?aff=Pvs1RARA)
 
