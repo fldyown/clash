@@ -2,7 +2,7 @@
 
 ## 按量计费
   用多少扣多少，稳定性还不错。
-  ChatGPT、Gemini、Claude 等都可以正常登录使用
+  ChatGPT、Gemini、Claude、YouTube、Netflix 等都可以正常登录使用
 
 ### [优惠连接](https://mojie.app/register?aff=Pvs1RARA)
 
