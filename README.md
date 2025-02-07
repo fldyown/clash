@@ -5,7 +5,7 @@
 支持支付宝、微信、加密货币等方式购买流量
 
 ## 按量计费
-  用多少扣多少，稳定性还不错。
+  仅访问外网时才会使用流量，稳定性还不错。
   ChatGPT、Gemini、Claude、YouTube、Netflix 等都可以正常登录使用
 
 ### [优惠连接](https://mojie.app/register?aff=Pvs1RARA)
