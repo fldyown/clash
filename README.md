@@ -10,7 +10,7 @@
 
 ### [优惠连接](https://mojie.app/register?aff=Pvs1RARA)
 
-# [魔戒机场新官网](https://mojie.app/register?aff=Pvs1RARA)
+# [魔戒机场最新官网](https://mojie.app/register?aff=Pvs1RARA)
 
 
 魔戒机场，一家以按量付费套餐著称的VPN服务提供商，旨在为用户提供灵活、经济的上网体验。
