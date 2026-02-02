@@ -5,8 +5,8 @@
 支持使用支付宝、微信、加密货币等方式购买流量
 
 ## 按量计费
-  仅访问外网时才会使用流量、稳定可靠。
-  ChatGPT、Gemini、Claude、YouTube、Netflix 等都可以正常登录使用
+  仅访问外网时才会使用流量、稳定可靠；
+  ChatGPT、Gemini、Claude、YouTube、Netflix 等都可以正常登录使用，可以点击代理，手动切换节点找到所在地区最稳定的节点长期使用。
 
 ### [优惠连接](https://mojie.app/register?aff=Pvs1RARA)
 
