@@ -1,8 +1,8 @@
 # Clash Meta 配置教程 · 魔戒机场科学上网完整指南 2026
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey)]()
-[![Protocol](https://img.shields.io/badge/protocol-Vless%20%7C%20VMess%20%7C%20Hysteria2%20%7C%20AnyTLS-orange)]()
+[![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey)](#客户端下载与安装)
+[![Protocol](https://img.shields.io/badge/protocol-VLESS%20%7C%20VMess%20%7C%20Hysteria2%20%7C%20AnyTLS-orange)](#什么是-clash-meta)
 [![Price](https://img.shields.io/badge/计费-按量计费%20不限时间-green)]()
 
 > 🚀 **2026 最新 Clash Meta 配置教程**：涵盖客户端安装、配置文件编写、分流策略最佳实践，以及推荐稳定可靠的按量计费代理机场 —— **魔戒机场**。
@@ -57,7 +57,8 @@
 | 客户端 | 平台 | 特点 |
 |--------|------|------|
 | [Clash Verge Rev](https://github.com/clash-verge-rev/clash-verge-rev) | Windows / macOS / Linux | ✅ 社区最活跃的 GUI 客户端，功能完整 |
-| [Clash Nyanpasu](https://github.com/keiko233/clash-nyanpasu) | Windows / macOS / Linux | ✅ 现代化 UI，支持一键导入订阅 |
+| [Clash Nyanpasu](https://github.com/libnyanpasu/clash-nyanpasu) | Windows / macOS / Linux | ✅ 现代化 UI，支持一键导入订阅 |
+| [Mihomo Party](https://github.com/mihomo-party-org/clash-party) | Windows / macOS / Linux | ✅ 现代化界面，深度适配 mihomo 内核 |
 
 ### 移动端
 
@@ -95,7 +96,6 @@ external-controller: :9090
 proxy-providers:
   魔戒机场:
     type: http
-    path: ./mojie.yaml
     url: "https://mojie.app/subscription/your_link"
     interval: 3600
     health-check:
@@ -280,7 +280,7 @@ dns:
 
 <details>
 <summary><b>Clash Meta 和原版 Clash 有什么区别？</b></summary>
-Clash Meta（现 mihomo）是原版 Clash 的社区活跃分支，支持更多新协议（Hysteria2、VLESS、AnyTLS），性能和稳定性更优。目前社区推荐的默认选择。
+Clash Meta（现已更名 mihomo）是原版 Clash 的社区活跃分支，支持更多新协议（Hysteria2、VLESS、AnyTLS），性能和稳定性更优。目前社区推荐的默认选择。
 </details>
 
 <details>
