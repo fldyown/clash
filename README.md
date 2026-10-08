@@ -7,7 +7,7 @@
 
 > 🚀 **2026 最新 Clash Meta 配置教程**：涵盖客户端安装、配置文件编写、分流策略最佳实践，以及推荐稳定可靠的按量计费代理机场 —— **魔戒机场**。
 
-👉 **[立即注册魔戒机场 · 按量计费 不限时间 不限速](https://mojie.app/register?aff=Pvs1RARA)** 👈
+👉 **[立即注册魔戒机场 · 按量计费 不限时间 不限速](https://mojie.host/register?aff=Pvs1RARA)** 👈
 
 ---
 
@@ -68,7 +68,7 @@
 | [Stash](https://stash.ws/) | iOS | 付费但功能强大的 iOS 客户端 |
 | [Loon](https://www.loon.wiki/) | iOS | 支持规则编辑的 iOS 代理工具 |
 
-> 💡 **提示**：安装后先不要急着配置，可以先用下方推荐的 [魔戒机场](https://mojie.app/register?aff=Pvs1RARA) 订阅链接快速上手，30 秒即可完成注册并获取订阅。
+> 💡 **提示**：安装后先不要急着配置，可以先用下方推荐的 [魔戒机场](https://mojie.host/register?aff=Pvs1RARA) 订阅链接快速上手，30 秒即可完成注册并获取订阅。
 
 ---
 
@@ -96,7 +96,7 @@ external-controller: :9090
 proxy-providers:
   魔戒机场:
     type: http
-    url: "https://mojie.app/subscription/your_link"
+    url: "https://mojie.host/subscription/your_link"
     interval: 3600
     health-check:
       enable: true
@@ -172,7 +172,7 @@ rules:
 
 推荐使用魔戒机场的订阅服务，注册后即可获取专属订阅链接：
 
-👉 **[点击注册魔戒机场获取订阅链接](https://mojie.app/register?aff=Pvs1RARA)**
+👉 **[点击注册魔戒机场获取订阅链接](https://mojie.host/register?aff=Pvs1RARA)**
 
 ---
 
@@ -232,7 +232,7 @@ dns:
 
 ## 🚀 魔戒机场推荐
 
-如果你还没有代理订阅，推荐我长期使用的 **[魔戒机场](https://mojie.app/register?aff=Pvs1RARA)** —— 一家专注按量计费的科学上网服务商，不限时间、不限速、不限设备数。
+如果你还没有代理订阅，推荐我长期使用的 **[魔戒机场](https://mojie.host/register?aff=Pvs1RARA)** —— 一家专注按量计费的科学上网服务商，不限时间、不限速、不限设备数。
 
 ### 为什么选择魔戒机场？
 
@@ -261,7 +261,7 @@ dns:
 
 > 💡 **首次购买建议**：先选 130G（¥19.90）试用速度和稳定性，满意后再续大流量包。
 
-👉 **[立即前往魔戒机场官网注册](https://mojie.app/register?aff=Pvs1RARA)** — 注册后获取订阅链接，在 Clash Verge 中一键导入即可使用。
+👉 **[立即前往魔戒机场官网注册](https://mojie.host/register?aff=Pvs1RARA)** — 注册后获取订阅链接，在 Clash Verge 中一键导入即可使用。
 
 ![魔戒机场套餐](assets/pricing.png)
 
@@ -285,7 +285,7 @@ Clash Meta（现已更名 mihomo）是原版 Clash 的社区活跃分支，支�
 
 <details>
 <summary><b>如何查看自己的订阅链接？</b></summary>
-在你的机场后台，通常会有「一键订阅」或「复制订阅链接」按钮。将链接粘贴到 Clash Verge 的「订阅管理」中即可自动拉取节点。推荐使用 [魔戒机场](https://mojie.app/register?aff=Pvs1RARA)，注册后在后台「订阅中心」一键复制。
+在你的机场后台，通常会有「一键订阅」或「复制订阅链接」按钮。将链接粘贴到 Clash Verge 的「订阅管理」中即可自动拉取节点。推荐使用 [魔戒机场](https://mojie.host/register?aff=Pvs1RARA)，注册后在后台「订阅中心」一键复制。
 </details>
 
 <details>
@@ -312,7 +312,7 @@ Clash Verge 支持延迟测试（Delay Test），点击节点列表中的延迟�
 
 ## 🎁 开始使用
 
-👉 **[立即注册魔戒机场](https://mojie.app/register?aff=Pvs1RARA)** — 按量计费 · 不限时间 · 不限速 · 不限设备
+👉 **[立即注册魔戒机场](https://mojie.host/register?aff=Pvs1RARA)** — 按量计费 · 不限时间 · 不限速 · 不限设备
 
 注册完成后，获取订阅链接，在 Clash Meta 客户端中一键导入，即可畅享全球网络。
 
