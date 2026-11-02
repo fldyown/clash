@@ -1,321 +1,166 @@
-# Clash Meta 配置教程 · 魔戒机场科学上网完整指南 2026
+# Clash Verge Rev 配置教程｜Mihomo 内核 + 魔戒机场订阅指南（2026）
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey)](#客户端下载与安装)
-[![Protocol](https://img.shields.io/badge/protocol-VLESS%20%7C%20VMess%20%7C%20Hysteria2%20%7C%20AnyTLS-orange)](#什么是-clash-meta)
+[![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey)](#客户端下载)
+[![Protocol](https://img.shields.io/badge/协议-VLESS%20%7C%20VMess%20%7C%20Hysteria2%20%7C%20AnyTLS-orange)](#快速开始)
 [![Price](https://img.shields.io/badge/计费-按量计费%20不限时间-green)](https://mojie.app/register?aff=Pvs1RARA)
 
-> 🚀 **2026 最新 Clash Meta 配置教程**：涵盖客户端安装、配置文件编写、分流策略最佳实践，以及推荐稳定可靠的按量计费代理机场 —— **魔戒机场**。
+> **Clash Verge Rev 新手教程**：面向 Windows、macOS、Linux 用户，3 分钟完成客户端安装、订阅导入和节点选择。无需手写 YAML，配合 **魔戒机场** 订阅即可使用。
 
-👉 **[立即注册魔戒机场 · 按量计费 不限时间 不限速](https://mojie.app/register?aff=Pvs1RARA)** 👈
-
----
-
-## 📋 目录
-
-- [什么是 Clash Meta？](#什么是-clash-meta)
-- [客户端下载与安装](#客户端下载与安装)
-- [配置文件详解](#配置文件详解)
-- [分流策略最佳实践](#分流策略最佳实践)
-- [🚀 魔戒机场推荐](#-魔戒机场推荐)
-- [常见问题 FAQ](#常见问题-faq)
+👉 **[注册魔戒机场 · 按量计费，不限时间](https://mojie.app/register?aff=Pvs1RARA)**
 
 ---
 
-## 什么是 Clash Meta？
+## 目录
 
-**Clash Meta**（现更名为 **mihomo**）是一个基于规则的跨平台代理客户端内核，支持多种代理协议，具备强大的规则分流能力。它最初是 Clash 项目的衍生版本，目前已成为社区最活跃的代理内核之一，是科学上网领域最主流的工具。
-
-**核心特点：**
-
-| 特性 | 说明 |
-|------|------|
-| 🚀 多协议支持 | Vmess、VLESS、Trojan、Hysteria2、Shadowsocks、AnyTLS 等 |
-| 📐 规则分流 | 根据域名/IP/GeoIP 自动选择出口，国内直连 + 境外代理 |
-| 🔄 自动切换 | 多节点间自动延迟测试，选择最优节点 |
-| 📡 跨平台 | Windows、macOS、Linux、OpenWrt、Android 全覆盖 |
-| 🧩 扩展性强 | 支持 TUN 虚拟网卡模式、DNS 劫持、Script 规则 |
-
-### Clash Meta vs 其他客户端对比
-
-| 对比项 | Clash Meta | V2rayN | Shadowrocket |
-|--------|------------|--------|--------------|
-| 规则分流 | ✅ 强大 | ❌ 基础 | ✅ 强大 |
-| 多协议支持 | ✅ 最全 | ✅ 全 | ✅ 全 |
-| 自动测速 | ✅ 内置 | ✅ 内置 | ✅ 内置 |
-| 开源免费 | ✅ 开源 | ✅ 开源 | ❌ 付费 |
-| 跨平台 | ✅ Win/Mac/Linux | ✅ Win | ❌ iOS only |
+- [先厘清三个名字](#先厘清三个名字)
+- [3 分钟快速开始](#3-分钟快速开始)
+- [客户端下载](#客户端下载)
+- [推荐设置](#推荐设置)
+- [常见问题](#常见问题)
+- [魔戒机场推荐](#魔戒机场推荐)
 
 ---
 
-## 客户端下载与安装
+## 先厘清三个名字
 
-推荐以下主流图形化客户端（底层均使用 Clash Meta 内核）：
+| 名称 | 定位 | 说明 |
+|------|------|------|
+| **Clash Verge Rev** | 桌面 GUI 客户端 | 新手直接安装使用，支持 Windows / macOS / Linux |
+| **Mihomo** | 代理内核 | 原 **Clash Meta**，现已更名并持续维护 |
+| **Clash Meta** | 旧名称 | 通常指 Mihomo 内核，或使用该内核的客户端 |
 
-### Windows / macOS
-
-| 客户端 | 平台 | 特点 |
-|--------|------|------|
-| [Clash Verge Rev](https://github.com/clash-verge-rev/clash-verge-rev) | Windows / macOS / Linux | ✅ 社区最活跃的 GUI 客户端，功能完整 |
-| [Clash Nyanpasu](https://github.com/libnyanpasu/clash-nyanpasu) | Windows / macOS / Linux | ✅ 现代化 UI，支持一键导入订阅 |
-| [Mihomo Party](https://github.com/mihomo-party-org/clash-party) | Windows / macOS / Linux | ✅ 现代化界面，深度适配 mihomo 内核 |
-
-### 移动端
-
-| 客户端 | 平台 | 特点 |
-|--------|------|------|
-| [Clash Meta for Android](https://github.com/MetaCubeX/ClashMetaForAndroid) | Android | ✅ 功能最全的 Android 客户端 |
-| [Stash](https://stash.ws/) | iOS | 付费但功能强大的 iOS 客户端 |
-| [Loon](https://www.loon.wiki/) | iOS | 支持规则编辑的 iOS 代理工具 |
-
-> 💡 **提示**：安装后先不要急着配置，可以先用下方推荐的 [魔戒机场](https://mojie.app/register?aff=Pvs1RARA) 订阅链接快速上手，30 秒即可完成注册并获取订阅。
+所以，**Clash Verge Rev 与 Clash Meta 不是替代关系**：前者是图形界面，后者是内核的旧称。新手认准 **「Clash Verge Rev + Mihomo 内核」** 即可；本教程后续统一使用 Mihomo 这一名称。
 
 ---
 
-## 配置文件详解
+## 3 分钟快速开始
 
-Clash Meta 的核心是一个 YAML 格式的配置文件 `config.yaml`，它定义了代理节点、规则分组和分流策略。
+### 第一步：注册并获取订阅
 
-### 基础配置模板
+1. 打开 **[魔戒机场注册页](https://mojie.app/register?aff=Pvs1RARA)**；
+2. 按需购买流量包，流量不限使用时间；
+3. 在用户中心的「订阅中心」复制 Clash 订阅链接。
 
-以下是一个可直接使用的模板（需配合订阅链接使用）：
+### 第二步：安装 Clash Verge Rev
+
+前往 [Clash Verge Rev Releases](https://github.com/clash-verge-rev/clash-verge-rev/releases)，下载与系统匹配的安装包：
+
+- Windows：`.exe` 或 `.msi`
+- macOS：选择与芯片匹配的 `.dmg`（Apple Silicon / Intel）
+- Linux：`.deb`、`.rpm` 或 AppImage
+
+### 第三步：导入订阅
+
+1. 打开 Clash Verge Rev，进入 **订阅**；
+2. 点击 **新建**，粘贴魔戒机场订阅链接；
+3. 点击 **导入**，等待节点和策略组加载；
+4. 进入 **代理**，选择节点或「自动选择」。
+
+### 第四步：开启代理并验证
+
+- 日常使用优先开启 **系统代理**；
+- 仅当应用不遵循系统代理时，再按需开启 **TUN 模式**；
+- 打开 ChatGPT、YouTube 或 Google 验证连通性。
+
+👉 **[还没有订阅？立即注册魔戒机场](https://mojie.app/register?aff=Pvs1RARA)**
+
+---
+
+## 客户端下载
+
+| 平台 | 推荐客户端 | 说明 |
+|------|------------|------|
+| Windows / macOS / Linux | [Clash Verge Rev](https://github.com/clash-verge-rev/clash-verge-rev) | 本教程主推，基于 Mihomo 内核 |
+| Windows / macOS / Linux | [Mihomo Party](https://github.com/mihomo-party-org/mihomo-party) | 现代化界面，可选 |
+| Android | [Clash Meta for Android](https://github.com/MetaCubeX/ClashMetaForAndroid) | 支持订阅导入 |
+| iOS | [Stash](https://stash.ws/) | 付费客户端 |
+| OpenWrt | [OpenClash](https://github.com/vernesong/OpenClash) | 路由器全局代理 |
+
+> 客户端功能与系统兼容性以各自项目的最新 Release 说明为准。
+
+---
+
+## 推荐设置
+
+### 代理模式
+
+- **规则模式**：推荐默认使用，国内直连、境外代理；
+- **全局模式**：仅在需要所有流量走代理时临时使用；
+- **直连模式**：排查代理问题时使用。
+
+### 节点与订阅
+
+- 优先选择「自动选择」或延迟测试结果较好的节点；
+- ChatGPT、Claude 等 AI 服务优先尝试香港、日本或美国节点；
+- Netflix、YouTube 等流媒体优先尝试日本、新加坡或美国节点；
+- 在 **订阅** 页面开启自动更新，机场节点变化后会自动同步。
+
+### 系统代理与 TUN 怎么选？
+
+- **系统代理**：占用低，适合浏览器和大多数桌面应用；
+- **TUN 模式**：兼容性更好，适合游戏、终端等不读取系统代理的程序；
+- 一般二选一即可，出现 DNS 或连接异常时再切换排查。
+
+---
+
+## 常见问题
 
 <details>
-<summary>📄 点击展开完整 config.yaml 模板</summary>
+<summary><b>Clash Meta 和 Clash Verge Rev 有什么区别？</b></summary>
 
-```yaml
-# Clash Meta 配置示例
-port: 7890
-socks-port: 7891
-allow-lan: true
-mode: Rule
-log-level: info
-external-controller: :9090
-
-# 代理节点 — 使用魔戒机场订阅链接自动拉取
-proxy-providers:
-  魔戒机场:
-    type: http
-    url: "https://mojie.app/subscription/your_link"
-    interval: 3600
-    health-check:
-      enable: true
-      url: http://www.gstatic.com/generate_204
-      interval: 300
-
-# 代理组 — 策略组配置
-proxy-groups:
-  - name: 🚀 节点选择
-    type: select
-    proxies:
-      - ♻️ 自动选择
-      - DIRECT
-    use:
-      - 魔戒机场
-
-  - name: ♻️ 自动选择
-    type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 50
-    use:
-      - 魔戒机场
-
-  - name: 🎯 全球直连
-    type: select
-    proxies:
-      - DIRECT
-      - 🚀 节点选择
-
-  - name: 🐟 漏网之鱼
-    type: select
-    proxies:
-      - 🚀 节点选择
-      - 🎯 全球直连
-
-# 规则 — 按照从上到下的优先级匹配
-rules:
-  # 国内网站直连
-  - DOMAIN-SUFFIX,cn,🎯 全球直连
-  - DOMAIN-SUFFIX,baidu.com,🎯 全球直连
-  - DOMAIN-SUFFIX,taobao.com,🎯 全球直连
-  - DOMAIN-SUFFIX,qq.com,🎯 全球直连
-  - DOMAIN-SUFFIX,weibo.com,🎯 全球直连
-  - DOMAIN-SUFFIX,zhihu.com,🎯 全球直连
-
-  # AI 服务走代理
-  - DOMAIN-SUFFIX,openai.com,🚀 节点选择
-  - DOMAIN-SUFFIX,anthropic.com,🚀 节点选择
-  - DOMAIN-SUFFIX,gemini.google.com,🚀 节点选择
-
-  # 流媒体走代理
-  - DOMAIN-SUFFIX,youtube.com,🚀 节点选择
-  - DOMAIN-SUFFIX,netflix.com,🚀 节点选择
-  - DOMAIN-SUFFIX,spotify.com,🚀 节点选择
-
-  # GeoIP 规则
-  - GEOIP,CN,🎯 全球直连
-
-  # 剩余流量默认走代理
-  - MATCH,🐟 漏网之鱼
-```
+Clash Meta 是内核的旧名称，现已更名为 **Mihomo**。Clash Verge Rev 是使用 Mihomo 内核的桌面图形客户端。两者是「界面」和「内核」的关系，不是同类软件。
 </details>
 
-### 配置要点
+<details>
+<summary><b>需要手动编写 config.yaml 吗？</b></summary>
 
-1. **proxy-providers** — 使用订阅链接自动拉取节点列表，无需手动维护
-2. **proxy-groups** — 策略组划分，实现「国内直连 + 境外代理」的智能分流
-3. **rules** — 规则匹配优先级从上到下，精确匹配优先
-4. **mode** — `Rule` 模式按规则分流，`Global` 全局代理，`Direct` 全局直连
+不需要。导入机场订阅后，Clash Verge Rev 会自动生成节点和策略组。只有需要自定义分流或高级功能时，才需要编辑配置。
+</details>
 
-### 订阅链接获取
+<details>
+<summary><b>订阅导入失败怎么办？</b></summary>
 
-推荐使用魔戒机场的订阅服务，注册后即可获取专属订阅链接：
+先确认订阅链接完整、未过期，并检查网络是否能正常访问机场官网。也可以在浏览器中打开订阅链接，确认返回的是 YAML 配置而不是错误页面。
+</details>
 
-👉 **[点击注册魔戒机场获取订阅链接](https://mojie.app/register?aff=Pvs1RARA)**
+<details>
+<summary><b>能访问境外网站，但国内网站变慢？</b></summary>
 
----
+切换到 **规则模式**，检查是否存在错误的全局代理或 DNS 设置。正常情况下，国内域名和 GeoIP-CN 应走直连。
+</details>
 
-## 分流策略最佳实践
+<details>
+<summary><b>ChatGPT 或 Netflix 仍然无法使用？</b></summary>
 
-合理的分流策略能让你 **国内网站直连不减速，境外服务代理不掉线**。
+先切换不同地区节点，再更新订阅。流媒体和 AI 服务对节点 IP 较敏感，机场通常会针对这些服务优化线路，具体支持情况以官网说明为准。
+</details>
 
-### 推荐策略
+<details>
+<summary><b>如何更新订阅？</b></summary>
 
-```
-┌─────────────┐
-│  DNS 请求   │
-└──────┬──────┘
-       ▼
-┌─────────────┐     ┌──────────────────┐
-│ 域名后缀匹配 ├─────▶ 国内域名 → 直连   │
-└──────┬──────┘     └──────────────────┘
-       ▼
-┌─────────────┐     ┌──────────────────┐
-│  AI/流媒体   ├─────▶ 香港/日本节点代理  │
-│  特殊域名    │     └──────────────────┘
-└──────┬──────┘
-       ▼
-┌─────────────┐     ┌──────────────────┐
-│  GeoIP 匹配  ├─────▶ 国内IP → 直连     │
-└──────┬──────┘     └──────────────────┘
-       ▼
-┌─────────────┐
-│  剩余 → 代理  │
-└─────────────┘
-```
-
-### 节点选择技巧
-
-- **香港节点** — 延迟最低（30-80ms），适合日常网页浏览和 AI 对话
-- **日本/新加坡节点** — 流媒体解锁能力强，适合 YouTube、Netflix
-- **美国节点** — 适合访问特定美区服务，如 OpenAI API
-- **自动选择** — 客户端每隔 5 分钟自动测速，选择延迟最低的节点
-
-### DNS 配置建议
-
-为避免 DNS 泄露，建议在 Clash Meta 中配置自定义 DNS：
-
-```yaml
-dns:
-  enable: true
-  enhanced-mode: fake-ip
-  nameserver:
-    - https://dns.alidns.com/dns-query
-    - https://doh.pub/dns-query
-  fallback:
-    - https://1.1.1.1/dns-query
-    - https://8.8.8.8/dns-query
-```
+在 Clash Verge Rev 的 **订阅** 页面点击对应订阅的更新按钮；也可以在订阅设置中开启自动更新。
+</details>
 
 ---
 
-## 🚀 魔戒机场推荐
+## 魔戒机场推荐
 
-如果你还没有代理订阅，推荐我长期使用的 **[魔戒机场](https://mojie.app/register?aff=Pvs1RARA)** —— 一家专注按量计费的科学上网服务商，不限时间、不限速、不限设备数。
+**[魔戒机场](https://mojie.app/register?aff=Pvs1RARA)** 采用按量计费模式，适合偶尔使用、AI 对话、流媒体和家庭多设备共享等场景。
 
-### 为什么选择魔戒机场？
+| 流量 | 价格 | 适合人群 |
+|------|------|----------|
+| 130G | ¥19.90 | 首次试用、轻度使用 |
+| 210G | ¥29.90 | 日常使用 |
+| 420G | ¥52.00 | 中度用户，性价比高 |
 
-| 特性 | 优势 |
-|------|------|
-| 💰 **按量计费，流量永不过期** | 买的流量用完为止，没有月付压力，偶尔使用也不浪费 |
-| 🔄 **全面兼容 Clash Meta** | 支持 Vmess、Hysteria2、AnyTLS 协议，订阅链接一键导入 |
-| 🌏 **全球节点覆盖** | 香港、日本、台湾、新加坡、韩国、美国等主流地区 |
-| 🤖 **AI 友好** | ChatGPT、Claude、Gemini 均可稳定访问，无验证码 |
-| 📺 **流媒体解锁** | YouTube、Netflix、Spotify、Disney+ 流畅播放 |
-| 💳 **多种支付方式** | 支付宝 / 微信 / 加密货币 均可 |
-| 📱 **不限制设备数** | 一个订阅手机、电脑、平板、路由器全家共享 |
-| ⚡ **不限速** | 购买带宽即实际带宽，无隐性限速 |
+套餐不限使用时间、不限设备数、不限速；价格和活动以官网当前页面为准。
 
-### 套餐概览
-
-| 流量 | 价格 | 特点 |
-|------|------|------|
-| 130G | ¥19.90 | 轻量使用，不限时间 |
-| 210G | ¥29.90 | 日常足够用 |
-| 420G | ¥52.00 | 中度用户推荐 ✅ |
-| 750G | ¥85.00 | 重度用户首选 |
-| 1660G | ¥179.00 | 团队共享 |
-| 3600G | ¥330.00 | 大流量需求 |
-| 10T | ¥888.00 | 超大户 |
-
-> 💡 **首次购买建议**：先选 130G（¥19.90）试用速度和稳定性，满意后再续大流量包。
-
-👉 **[立即前往魔戒机场官网注册](https://mojie.app/register?aff=Pvs1RARA)** — 注册后获取订阅链接，在 Clash Verge 中一键导入即可使用。
+👉 **[查看完整套餐与使用说明](https://github.com/fldyown/mojie)**
+👉 **[立即注册魔戒机场](https://mojie.app/register?aff=Pvs1RARA)**
 
 ![魔戒机场套餐](assets/pricing.png)
 
-### 使用魔戒机场能做什么？
-
-- 🤖 **AI 对话**：ChatGPT、Claude、Gemini、Perplexity 稳定可用
-- 📺 **4K 流媒体**：YouTube、Netflix、Disney+ 无缓冲播放
-- 🌐 **学术研究**：Google Scholar、arXiv、IEEE 文献检索
-- 💼 **跨境办公**：Slack、Notion、GitHub、Figma 顺畅协作
-- 🎮 **游戏联机**：降低延迟，减少丢包
-- 📚 **在线学习**：Coursera、Udemy、Khan Academy 自由访问
-
 ---
 
-## 常见问题 FAQ
-
-<details>
-<summary><b>Clash Meta 和原版 Clash 有什么区别？</b></summary>
-Clash Meta（现已更名 mihomo）是原版 Clash 的社区活跃分支，支持更多新协议（Hysteria2、VLESS、AnyTLS），性能和稳定性更优。目前社区推荐的默认选择。
-</details>
-
-<details>
-<summary><b>如何查看自己的订阅链接？</b></summary>
-在你的机场后台，通常会有「一键订阅」或「复制订阅链接」按钮。将链接粘贴到 Clash Verge 的「订阅管理」中即可自动拉取节点。推荐使用 [魔戒机场](https://mojie.app/register?aff=Pvs1RARA)，注册后在后台「订阅中心」一键复制。
-</details>
-
-<details>
-<summary><b>如何选择最快的节点？</b></summary>
-Clash Verge 支持延迟测试（Delay Test），点击节点列表中的延迟测试按钮，客户端会自动 ping 每个节点，选择延迟最低的即可。也可以在配置中设置「自动选择」策略组。
-</details>
-
-<details>
-<summary><b>配置后无法访问国内网站怎么办？</b></summary>
-检查配置中的规则是否包含国内域名直连规则（DOMAIN-SUFFIX,cn），以及是否开启了 TUN 模式。如果使用 TUN 模式，建议配合 DNS 配置使用。
-</details>
-
-<details>
-<summary><b>魔戒机场支持退款吗？</b></summary>
-魔戒机场采用按量计费，流量未使用完可以联系客服协商处理。建议先购买小流量套餐（130G ¥19.90）测试速度。
-</details>
-
-<details>
-<summary><b>Clash Meta 适合新手使用吗？</b></summary>
-对于完全零基础的用户，建议从 Clash Verge Rev 图形客户端开始。安装后只需导入订阅链接即可使用，无需手动编写 YAML 配置文件。
-</details>
-
----
-
-## 🎁 开始使用
-
-👉 **[立即注册魔戒机场](https://mojie.app/register?aff=Pvs1RARA)** — 按量计费 · 不限时间 · 不限速 · 不限设备
-
-注册完成后，获取订阅链接，在 Clash Meta 客户端中一键导入，即可畅享全球网络。
-
----
-
-<sub>免责声明：本项目仅提供 Clash Meta 技术教程和代理信息分享，请遵守当地法律法规合理使用。</sub>
+<sub>免责声明：本项目仅用于技术教程和信息分享。请遵守所在地法律法规及服务提供商的使用条款。</sub>
